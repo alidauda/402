@@ -1,0 +1,16 @@
+{
+  "name": "epxress",
+  "module": "src/index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "g402-seller-sdk": "^0.2.1"
+  }
+}
