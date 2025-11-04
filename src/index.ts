@@ -31,6 +31,9 @@ async function paymentGuard(req: Request, res: Response, next: NextFunction) {
 app.get("/api/premium/data", paymentGuard, (req, res) => {
   res.json({ data: "premium content" });
 });
+app.get("/health", (req: Request, res: Response) => {
+  res.status(200).json("hello");
+});
 
 app.listen(3000, () => {
   console.log("Server running on port 3000");
